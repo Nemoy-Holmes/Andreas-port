@@ -1,13 +1,20 @@
 *{
     margin: 0;
-    margin: 0;
+}
+body {
+    background-image: url("img/night.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+ /*closing icon*/
 #nav-icon {
     width: 60px;
     height: 45px;
     position: relative;
-    margin: 50px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -21,10 +28,10 @@
 
 #nav-icon span {
     display: block;
-    position: absolute;
+    position: fixed;
     height: 9px;
     width: 100%;
-    background:whitesmoke;
+    background:grey;
     border-radius: 9px;
     opacity: 1;
     left: 0%;
@@ -77,3 +84,183 @@
     left: 50%;
   }
   
+/*menubar*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:grey;
+    opacity: .8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: whitesmoke;
+}
+#main {
+    transition: margin-left .5s;
+    z-index: 1;
+    padding: 16px;
+    position: fixed;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.lang {
+    background-color: darkgray;
+    position: absolute;;
+    margin-left: 92%;
+    margin-top: 2%;
+    z-index: 1;
+}
+
+.test {
+    width: 100%;
+}
+/*intro*/
+.introQuote {
+    width: 100%;
+    margin-bottom: 6.25em;
+    margin-top: 6.25em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    background-color: white;
+    opacity: .6;
+    text-align: center;
+
+}
+
+    .blurb-h {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    
+/*about*/
+#about {
+    padding-top: 5.625em;
+    background-image: url(img/cello.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 1.625em;
+}
+
+.header {
+    
+    opacity: .6;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+}
+.main-text {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 6.25em;
+    padding: 2em;
+    background-color: white;
+    opacity: .6;
+    background-size: cover;
+}
+/***work starts here***/
+
+#work {
+    background-color: #00cc99;
+    width: 80%;
+    align-content: center;
+    padding-bottom: 6em;
+	overflow: auto;
+
+
+}
+.edit-obj {
+    margin-top: 2em;
+    margin-bottom: 1em;
+		padding-left: 20%;
+}
+
+.obj-head {
+    color: black;
+    font-weight: 600;
+}
+
+
+/*** contact starts here ***/
+
+#contact-back {
+    padding-top: 5.625em;
+    background-color: rgba(211, 202, 192, 0.726);
+    padding-bottom: 1.625em;
+}
+
+
+
+.cont-head {
+    color: white;
+    font-weight: bolder;
+    align-content: center;
+    padding-left: 35%;
+}
+
+.contact1 {
+    width: 60%;
+    padding-bottom: 6em;
+    padding-left: 20%;
+}
+
+.cont-format {
+    display: inline-block;
+    background-color: #88af9cc9;
+	padding-bottom: 2em;
+    margin-bottom: 1em;
+    opacity: .5;
+}
+
+
+
+.modal-button {
+    float:right;
+    padding: 1em;
+    padding-right: 12em;
+}
+
+#event-list {
+    height: 40em;
+    width: 100%;
+    padding: 1em;
+}
+
+.social {
+
+    margin-left: 40%;
+    text-decoration: none;
+}
+
+.disqus{
+	width: 60%;
+	padding-left: 20%;
+}
+/*vid-cont to footer*/
+
+.copyright {
+    clear: both;
+		padding-left: 10%;
+}
+
